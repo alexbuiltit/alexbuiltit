@@ -1,5 +1,6 @@
 import Heading from "../components/Heading";
 import styled from "styled-components";
+import Head from "next/head";
 
 const ContentContainer = styled.section`
   display: block;
@@ -12,6 +13,9 @@ const ContentContainer = styled.section`
 const Index = () => {
   return (
     <>
+      <Head>
+        <title>Alex Turner | Front end engineer | West Midlands</title>
+      </Head>
       <ContentContainer>
         <Heading level={1}>Hello, I'm Alex.</Heading>
         <p>
